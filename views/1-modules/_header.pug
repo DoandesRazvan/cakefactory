@@ -1,0 +1,18 @@
+include ../0-mixins/_headingcontent.pug
+
+.cover
+  i.cover--navbar-button-menu.fa.fa-bars.fa-3x#navbar-button
+
+  .cover--navbar
+    a(href="#").cover--navbar--link About us
+    a(href="#").cover--navbar--link Gallery
+    p.cover--navbar--breakline ―
+    h1.cover--navbar--logo Cake factory
+    p.cover--navbar--breakline ―
+    a(href="#").cover--navbar--link Pricing
+    a(href="#").cover--navbar--link Contact
+
+  .cover--content
+    +headingcontent("Cakes on demand", "Handmade cakes uniquely created by professionals for you", "Contact a cake artist now")
+
+    i.cover--content--chevron.fa.fa-chevron-down.fa-4x

@@ -1,7 +1,6 @@
 const gulp = require('gulp'),
       pug = require('gulp-pug'),
       sass = require('gulp-sass'),
-      imagemin = require('gulp-imagemin'),
       autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('pug', () => {
@@ -23,16 +22,9 @@ gulp.task('sass', () => {
                .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('imagemin', () => {
-    return gulp.src('images/*')
-               .pipe(imagemin())
-               .pipe(gulp.dest('dist/img/')); 
-});
-
-gulp.task('default', ['pug', 'sass', 'imagemin']);
+gulp.task('default', ['pug', 'sass']);
 
 gulp.task('watch', () => {
     gulp.watch('./views/2-sections/*.pug', ['pug']);
     gulp.watch('./sass/2-sections/*.sass', ['sass']);
-    gulp.watch('images/*', ['imagemin']);
 });

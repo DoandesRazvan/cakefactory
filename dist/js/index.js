@@ -18,11 +18,10 @@
         }
     });
 
-    //making sure navbar is still visible in case navbar was hidden and the button isn't visible anymore. also takes care of hiding the nav if the browser is later resized to mobile size
+    // making sure navbar is still visible in case navbar was hidden and the button isn't visible anymore. also takes care of hiding the nav if the browser is later resized to mobile size
     function navbarFix() {
         let wdvWidth = $(window).width();
 
-        // fix this
         if (wdvWidth > 940 && navbarFixed)
             navbarFixed = false;
 

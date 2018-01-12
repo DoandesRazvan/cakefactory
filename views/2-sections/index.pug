@@ -1,9 +1,3 @@
-mixin headingcontent(header, lead, cta)
-  .heading-content
-    h1.heading-content--header= header
-    p.heading-content--lead= lead
-    button.heading-content--cta= cta
-
 doctype html
 html
   head
@@ -15,70 +9,12 @@ html
     title Cake Factory
   body
     header#header
-      .cover
-        i.cover--navbar-button-menu.fa.fa-bars.fa-3x#navbar-button
-
-        .cover--navbar
-          a.cover--navbar--link(href="#") About us
-          a.cover--navbar--link(href="#") Gallery
-          p.cover--navbar--breakline ―
-          h1.cover--navbar--logo Cake factory
-          p.cover--navbar--breakline ―
-          a.cover--navbar--link(href="#") Pricing
-          a.cover--navbar--link(href="#") Contact
-
-        .cover--content
-          +headingcontent("Cakes on demand", "Handmade cakes uniquely created by professionals for you", "Contact a cake artist now")
-
-          i.cover--content--chevron.fa.fa-chevron-down.fa-4x
-
+      include ../1-modules/_header
+    
     main#main
-      .features-block
-        h1.features-block--heading Unique design
-        p.features-block--lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-      .features-block
-        h1.features-block--heading Fast delivery times
-        p.features-block--lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-      .seasonal
-        +headingcontent("Seasonal specials", "Create a special cake for this month's events", "Get in touch instantly")
-        
-      .features-block
-        h1.features-block--heading  Entirely from scratch
-        p.features-block--lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-      .event
-        +headingcontent("Plan the perfect event", "Order a cake from us and our catering team will take care of your event's dessert menu", "Talk with us right away")
-
-      .past-events
-        p.past-events--lead Still not convinced we are the perfect solution?
-        a(href="#").past-events--link Past events gallery &#187;
+      include ../1-modules/_main
 
     footer#footer
-      .footer-container
-        .contact.footer-container--column
-          h1.contact--header Contact
-          h2.contact--phone-number 401-861-5190
-          p.contact--address 92 Spruce Street
-            br
-            | Providence, Rhode Island
-          a(href="#").contact--link View map &#187;
-        .schedule.footer-container--column
-          h1.schedule--header Schedule
-          p.schedule--period Tuesday - Thursday: 8:30am - 11pm
-          p.schedule--period Friday - Saturday: 8:30am - 11:30pm
-          p.schedule--period Sunday: 10am - 10pm
-          p.schedule--period Closed on Monday
-
-        .social.footer-container--column
-          h1.social--header Social
-          i.social--icon.fa.fa-facebook-square.fa-5x
-          i.social--icon.fa.fa-twitter-square.fa-5x
-          i.social--icon.fa.fa-instagram.fa-5x
-        
-      hr.footer-break
-
-      h1.footer-logo Cake factory
+      include ../1-modules/_footer
 
     script(src="../js/index.js")

@@ -1,0 +1,112 @@
+#footer
+  @extend %flex, %padding
+
+  flex-direction: column
+
+  background: $black
+
+.footer-wrapper
+  @extend %flex
+
+  width: 100%
+  margin-top: 100px
+
+  &--column
+    font:
+      family: $secondary
+    
+    h1
+      font:
+        family: $main
+        weight: 400
+        size: 40px
+      color: $white
+      
+  .contact
+    width: 40%
+
+    &--phone-number, &--address, &--link
+      font-size: 40px
+      color: $dark-gray
+
+    &--link
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+        
+  .schedule
+    width: 50%
+
+    &--period
+      font-size: 32px
+      color: $dark-gray
+
+      @media (max-width: 800px)
+        font-size: 28px
+      
+  .social
+    @extend %flex
+
+    flex-direction: column
+    width: 10%
+    margin-left: auto
+
+    &--header, &--icon
+      align-self: flex-end
+
+    &--icon
+      @extend %transition
+
+      margin-top: 30px
+
+      color: $dark-gray
+
+      cursor: pointer
+
+      &:hover
+        color: $white
+
+      &:nth-child(2)
+        margin-top: 0px
+
+  @media (max-width: 1460px)
+    flex-direction: column
+        
+    .contact, .schedule, .social
+      width: 100%
+
+    .schedule
+      margin-top: 40px
+
+    .social
+      margin: 40px 0 
+
+      &--header, &--icon
+        align-self: flex-start
+
+  @media (max-width: 695px)
+    &--column
+      h1
+        font-size: 30px
+
+    .contact
+      &--phone-number, &--address, &--link
+        font-size: 30px
+
+    .schedule
+      &--period
+        font-size: 20px
+
+.footer-break
+  width: 100%
+
+  border-color: darken($dark-gray, 60%)
+
+.footer-logo
+  margin: 0 0 100px
+
+  font:
+    family: $cursive
+    weight: 400
+  color: darken($dark-gray, 50%)
