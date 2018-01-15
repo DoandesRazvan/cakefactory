@@ -1,39 +1,6 @@
 @mixin headingcontent($cta-color)
-  .heading-content
-    &--heading, &--lead
-      margin: 0
+  .heading-content--cta
+    background: $cta-color
 
-    &--heading, &--lead, &--cta
-      font-family: $main
-
-    &--heading
-      font:
-        weight: 400
-        size: 60px
-      color: $white
-
-    &--lead
-      font:
-        size: 40px
-        weight: 300
-      color: $light-gray
-
-    &--cta
-      @extend %transition
-      
-      width: 430px
-      height: 70px
-      margin-top: 20px
-      background: $cta-color
-
-      font-size: 30px
-      color: $gray
-
-      border: none
-        radius: 40px
-
-      cursor: pointer
-      outline: none
-
-      &:hover
-        background: lighten($cta-color, 10%)
+    &:hover
+      background: lighten($cta-color, 10%)

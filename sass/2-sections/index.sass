@@ -3,7 +3,42 @@
 @import '../0-utilities/_mixins.sass'
 @import '../1-modules/_header.sass'
 @import '../1-modules/_main.sass'
-@import '../1-modules/_footer.sass'
+@import '../1-modules/_footer.sass' 
+
+.heading-content
+  &--heading, &--lead
+    margin: 0
+
+  &--heading, &--lead, &--cta
+    font-family: $main
+
+  &--heading
+    font:
+      weight: 400
+      size: 60px
+    color: $white
+
+  &--lead
+    font:
+      size: 40px
+      weight: 300
+    color: $light-gray
+
+  &--cta
+    @extend %transition
+    
+    width: 430px
+    height: 70px
+    margin-top: 20px
+
+    font-size: 30px
+    color: $gray
+
+    border: none
+      radius: 40px
+
+    cursor: pointer
+    outline: none
 
 @media (max-width: 1340px)
   .heading-content

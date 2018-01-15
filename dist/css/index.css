@@ -7,7 +7,7 @@
   padding-left: 140px;
   padding-right: 140px; }
 
-.cover--content .heading-content--cta, .seasonal .heading-content--cta, .event .heading-content--cta, .footer-wrapper .social--icon {
+.footer-wrapper .social--icon, .heading-content--cta {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
 
@@ -117,29 +117,8 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%; }
-    .cover--content .heading-content--heading, .cover--content .heading-content--lead {
-      margin: 0; }
-    .cover--content .heading-content--heading, .cover--content .heading-content--lead, .cover--content .heading-content--cta {
-      font-family: "Fira Sans", sans-serif; }
-    .cover--content .heading-content--heading {
-      font-weight: 400;
-      font-size: 60px;
-      color: #F2F3F4; }
-    .cover--content .heading-content--lead {
-      font-size: 40px;
-      font-weight: 300;
-      color: #EEEEEE; }
     .cover--content .heading-content--cta {
-      width: 430px;
-      height: 70px;
-      margin-top: 20px;
-      background: #01093F;
-      font-size: 30px;
-      color: #DDDDDD;
-      border: none;
-        border-radius: 40px;
-      cursor: pointer;
-      outline: none; }
+      background: #01093F; }
       .cover--content .heading-content--cta:hover {
         background: #021071; }
     .cover--content .heading-content {
@@ -209,29 +188,8 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/seasonal.jpg");
     background-size: cover;
     background-position: center center; }
-  .seasonal .heading-content--heading, .seasonal .heading-content--lead {
-    margin: 0; }
-  .seasonal .heading-content--heading, .seasonal .heading-content--lead, .seasonal .heading-content--cta {
-    font-family: "Fira Sans", sans-serif; }
-  .seasonal .heading-content--heading {
-    font-weight: 400;
-    font-size: 60px;
-    color: #F2F3F4; }
-  .seasonal .heading-content--lead {
-    font-size: 40px;
-    font-weight: 300;
-    color: #EEEEEE; }
   .seasonal .heading-content--cta {
-    width: 430px;
-    height: 70px;
-    margin-top: 20px;
-    background: #57702E;
-    font-size: 30px;
-    color: #DDDDDD;
-    border: none;
-      border-radius: 40px;
-    cursor: pointer;
-    outline: none; }
+    background: #57702E; }
     .seasonal .heading-content--cta:hover {
       background: #73943d; }
   .seasonal .heading-content {
@@ -251,29 +209,8 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/event.jpg");
     background-size: cover;
     background-position: center; }
-  .event .heading-content--heading, .event .heading-content--lead {
-    margin: 0; }
-  .event .heading-content--heading, .event .heading-content--lead, .event .heading-content--cta {
-    font-family: "Fira Sans", sans-serif; }
-  .event .heading-content--heading {
-    font-weight: 400;
-    font-size: 60px;
-    color: #F2F3F4; }
-  .event .heading-content--lead {
-    font-size: 40px;
-    font-weight: 300;
-    color: #EEEEEE; }
   .event .heading-content--cta {
-    width: 430px;
-    height: 70px;
-    margin-top: 20px;
-    background: #B44967;
-    font-size: 30px;
-    color: #DDDDDD;
-    border: none;
-      border-radius: 40px;
-    cursor: pointer;
-    outline: none; }
+    background: #B44967; }
     .event .heading-content--cta:hover {
       background: #c46c85; }
   .event .heading-content {
@@ -415,6 +352,33 @@ body {
   font-family: "Dancing Script", cursive;
   font-weight: 400;
   color: #4d4d4d; }
+
+.heading-content--heading, .heading-content--lead {
+  margin: 0; }
+
+.heading-content--heading, .heading-content--lead, .heading-content--cta {
+  font-family: "Fira Sans", sans-serif; }
+
+.heading-content--heading {
+  font-weight: 400;
+  font-size: 60px;
+  color: #F2F3F4; }
+
+.heading-content--lead {
+  font-size: 40px;
+  font-weight: 300;
+  color: #EEEEEE; }
+
+.heading-content--cta {
+  width: 430px;
+  height: 70px;
+  margin-top: 20px;
+  font-size: 30px;
+  color: #DDDDDD;
+  border: none;
+    border-radius: 40px;
+  cursor: pointer;
+  outline: none; }
 
 @media (max-width: 1340px) {
   .heading-content--lead, .heading-content--cta {
